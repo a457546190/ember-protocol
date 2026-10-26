@@ -1,0 +1,24 @@
+{
+  "name": "ember-protocol",
+  "version": "1.0.0",
+  "description": "A browser survival game built with a custom ECS, TypeScript and Canvas 2D.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build && node tools/package.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "tsx --test tests/*.test.ts",
+    "test:browser": "node tests/browser-check.mjs",
+    "test:balance": "tsx tests/balance-check.ts",
+    "test:offline": "node tests/offline-check.mjs",
+    "test:mobile": "node tests/mobile-check.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12"
+  }
+}

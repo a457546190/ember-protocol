@@ -1,0 +1,12 @@
+node_modules/
+dist/
+test-results/
+*.log
+ops/
+publish/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
